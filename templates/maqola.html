@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <link rel="stylesheet" href="/static/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <title>{{maqola.sarlavha}}</title>
+</head>
+<body>
+    <div class="container">
+        <h3>{{maqola.sana}}</h3><h2>{{maqola.sarlavha}}</h2>
+        <div class="row">
+            <div class="col-12">
+                <img src="{{maqola.rasm.url}}" alt="">
+                <p>{{maqola.matn}}</p>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>© 2023 codial.com</p>
+        </div>
+    </div>
+</body>
+</html>
